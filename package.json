@@ -1,0 +1,15 @@
+{
+  "name": "practice-jest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/lorraine98/practice-jest.git",
+  "author": "lorraine98 <hyosung0425@naver.com>",
+  "scripts": {
+    "test": "jest"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "jest": "^27.5.1"
+  }
+}
