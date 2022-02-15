@@ -51,3 +51,10 @@ test("Mike is in User list", () => {
 test("check error message", () => {
   expect(() => fn.throwErr()).toThrow("error");
 });
+test("check age after 2 sec", async () => {
+  const age = await fn.getAge();
+  expect(age).toBe(30);
+});
+test("check age resolve after 2 sec", async () => {
+  await expect(fn.getAge()).resolves.toBe(30);
+});

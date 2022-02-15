@@ -4,5 +4,13 @@ const fn = {
   throwErr: () => {
     throw new Error("error");
   },
+  getAge: () => {
+    const age = 30;
+    return new Promise((res, rej) => {
+      setTimeout(() => {
+        res(age);
+      }, 2000);
+    });
+  },
 };
 module.exports = fn;
